@@ -1,20 +1,22 @@
 const converter = () => {
-  var in_val = document.querySelector("#in_val").value;
-  var in_unit = document.querySelector("#in_unit").value;
+  var in_val = document.querySelector("#in_val");
+  var in_unit = document.querySelector("#in_unit");
   var out_val = document.querySelector("#out_val");
-  var out_unit = document.querySelector("#out_unit").value;
+  var out_unit = document.querySelector("#out_unit");
 
-  //meter and centimeter
-  if (in_unit == "meter" && out_unit == "centimeter") {
-    //multiply by 100
-    let output_val = in_val * 100;
-    out_val.value = output_val;
+  console.log(in_val);
+  console.log(in_unit);
+  console.log(out_val);
+  console.log(out_unit);
+
+  // meter and centimeter
+  if (in_unit.value == "meter" && out_unit.value == "centimeter") {
+    out_val.value = in_val.value * 100;
   }
   //centimeter to meter
   else if (in_unit == "centimeter" && out_unit == "meter") {
     //divide by 100
-    let output_val = in_val / 100;
-    out_val.value = output_val;
+    out_val = in_val / 100;
   }
   //kilometer to meter
   else if (in_unit == "kilometer" && out_unit == "meter") {

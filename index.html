@@ -2,73 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="" content=""/>
+    <meta name="" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-   <div class="wrapper">
-    <h1 style="margin-bottom: 20px; color: white;">Unit Convertor</h1>
-    <div class="converter_wrapper">
-     <div class="wrp">
-      <input title="in" type="text" id="in_val" onkeyup="converter()">
-      <select title="out" id="out_unit">
-       <option value="kilometer">kilometer</option>
-       <option value="meter">meter</option>
-       <option value="centimeter">centimeter</option>
-       <option value="millimeter">millimeter</option>
-       <option value="micrometer">micrometer</option>
-       <option value="nanometer">nanometer</option>
-       
-       <option value="foot">foot</option>
-       <option value="inch">inch</option>
-       <option value="yard">yard</option>
-       <option value="mile">mile</option>
-      </select>
-     
-
-     </div>
-      <div class="wrp"><h1 style="color: white ;">=</h1></div>
-
+    <div class="wrapper">
+      <h1 style="margin-bottom: 20px; color: white">Unit Convertor</h1>
       <div class="wrp">
-      <input type="text" name="" id="in_val">
-      <select name="" id="in_unit">
-       <option value="kilometer">kilometer</option>
-       <option value="meter">meter</option>
-       <option value="centimeter">centimeter</option>
-       <option value="millimeter">millimeter</option>
-       <option value="micrometer">micrometer</option>
-       <option value="nanometer">nanometer</option>
-      
-       <option value="foot">foot</option>
-       <option value="inch">inch</option>
-       <option value="yard">yard</option>
-       <option value="mile">mile</option>
-      </select>
-
+        <input title="in" type="text" id="in_val" onkeyup="converter()" />
+        <select title="in" id="in_unit">
+          <option value="kilometer">kilometer</option>
+          <option value="meter">meter</option>
+          <option value="centimeter">centimeter</option>
+          <option value="millimeter">millimeter</option>
+          <option value="micrometer">micrometer</option>
+          <option value="nanometer">nanometer</option>
+          <option value="foot">foot</option>
+          <option value="inch">inch</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option>
+        </select>
+      </div>
+      <div class="wrp"><h1 style="color: white">=</h1></div>
+      <div class="wrp">
+        <input type="text" title="in-val" name="" id="out_val" />
+        <select name="" title="unit" id="out_unit">
+          <option value="kilometer">kilometer</option>
+          <option value="meter">meter</option>
+          <option value="centimeter">centimeter</option>
+          <option value="millimeter">millimeter</option>
+          <option value="micrometer">micrometer</option>
+          <option value="nanometer">nanometer</option>
+          <option value="foot">foot</option>
+          <option value="inch">inch</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option>
+        </select>
+      </div>
     </div>
-   </div>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
